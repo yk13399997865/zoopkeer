@@ -2,7 +2,6 @@ package com.yk.zookeeper.controller;
 
 
 import com.yk.zookeeper.Service.OrderService;
-import com.yk.zookeeper.zk.MyThread;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,7 +37,7 @@ public class ApiController {
             }).start();
 
         }
-        System.out.println(111);
+        log.info("我先走了");
         return "ok";
     }
 

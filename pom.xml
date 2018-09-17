@@ -36,6 +36,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!--zookeeper 相关依赖-->
         <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>

@@ -10,7 +10,6 @@ import java.util.concurrent.locks.Lock;
 /**
  * @program: zookpeeper
  * @description: 订单服务
- *
  * @author: yk
  **/
 public class OrderService {
@@ -22,6 +21,7 @@ public class OrderService {
     //锁
     private static Lock lock = new DistributedLock();
 
+    //创建订单号
     public void createOrder() {
         String orderNo;
         //获取锁

@@ -6,13 +6,13 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * @program: work-flow
- * @description:
+ * @description: 实现序列化
  * @author: yk
  * @create: 2018-08-21 11:04
  **/
 public class ZkSerializer implements org.I0Itec.zkclient.serialize.ZkSerializer {
 
-    static String CHARSET = "UTF-8";
+    private static String CHARSET = "UTF-8";
 
     @Override
     public byte[] serialize(Object o) throws ZkMarshallingError {

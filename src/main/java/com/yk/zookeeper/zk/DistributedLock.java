@@ -17,12 +17,12 @@ import java.util.concurrent.locks.Lock;
  * @program: zookeeper
  * @description: zookeeper分布式锁
  * @author: yk
-
  **/
 public class DistributedLock implements Lock {
     private Logger log = LoggerFactory.getLogger(DistributedLock.class);
 
-    // 根节点
+    // 根节点可以提前在zookeeper服务下创建好
+    // create /QWE 1  创建命令
     private static String LOCK_PATH = "/QWE";
 
     private ThreadLocal<String> currentPath = new ThreadLocal<>();
