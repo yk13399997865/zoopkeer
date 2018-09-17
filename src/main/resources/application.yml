@@ -1,0 +1,8 @@
+server:
+  port: 8099
+
+logging:
+  level:
+    com:
+      yk:
+        zookeeper: info
